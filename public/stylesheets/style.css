@@ -1,0 +1,47 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.precio{
+  margin-left:0px
+   
+ }
+ 
+ .precioDescuento{
+  margin-left:25px
+   
+ }
+ 
+ .codigo{
+  margin-left:25px
+   
+ }
+ 
+ .imagen{
+   display:inline-block;
+   width: 20%;
+ }
+ 
+ .imagenProducto{
+   width: 90%;
+   height: 90px
+ }
+ 
+ 
+ .sumario{
+   display:inline-block;
+   width: 70%;
+ }
+ 
+ .producto{
+   background-color: #cac3c3
+ }
+ 
+ .linkProducto{
+   color: initial
+ }

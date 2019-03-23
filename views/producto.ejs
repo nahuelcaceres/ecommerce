@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <head>
+        <title>Detalle Producto</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    
+    <body>
+    
+    <div class="producto">    
+        <div class="imagen">
+        <img class="imagenProducto" src= <%= producto.imgSource %>  alt="" /> 
+        </div>
+
+        <div class="sumario">
+        <h3>Nombre: <%= producto.nombre %></h3>        
+        <p>Descripcion: <%= producto.descripcion %></p>
+        <span class="precio">Precio: <%= producto.precio %></span>
+        <span class="precioDescuento">Precio con descuento: <%= producto.precioDescuento %></span>
+        <span class="codigo">Codigo: <%= producto.codigo %></span>  
+        </div>
+    </div>
+
+    <div class="botonVolver">
+        <br>
+        <a href="/productos" class="linkProducto"> VOLVER </a>
+    </div>
+
+    </body>
+</html>

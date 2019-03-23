@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>Productos</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+    <h1>Listado de productos</h1>
+    <br/>
+
+    <% for(var i = 0; i < productos.length; i++) { %>
+   
+        <div class="producto">
+        <a href="/producto?codigo=<%= productos[i].codigo %>" class="linkProducto">
+        
+            <div class="imagen">
+            <img class="imagenProducto" src= <%= productos[i].imgSource %>  alt="" /> 
+            </div>
+
+            <div class="sumario">
+            <h3>Nombre: <%= productos[i].nombre %></h3>        
+            <p>Descripcion: <%= productos[i].descripcion %></p>
+            <span class="precio">Precio: <%= productos[i].precio %></span>
+            <span class="precioDescuento">Precio con descuento: <%= productos[i].precioDescuento %></span>
+            <span class="codigo">Codigo: <%= productos[i].codigo %></span>  
+            </div>
+        </a>
+        </div>
+        <hr/>
+
+    <% } %>
+
+</body>
+</html>

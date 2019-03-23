@@ -1,0 +1,30 @@
+Desarrollar una página de inicio de un e-commerce. En la misma se deben mostrar 4
+productos maquetados con los siguientes datos:
+
+Nombre
+Descripción
+Imagen
+Precio
+Precio con descuento
+Código
+
+Al hacer clic en el producto la aplicación nos debe redirigir a la página de detalle del
+mismo en la cual visualizaremos la misma información de la home
+
+<!-- <% productos1 %> -->
+        
+   <!--  <% productos.forEach(function(producto)) {%>
+
+        <br>
+        <div id="producto">
+            <p>Nombre: <%= producto.nombre %></p>        
+            <img src="imagen.jpg" alt="imagen del objecto"> 
+            <p>Descripcion:</p>
+            <p>Precio:</p>
+            <p>Precio con descuento:</p>
+            <p>Codigo:</p>
+        </div>
+
+    <% }); %> -->
+
+    <%# <%= producto.toString() %> %>
