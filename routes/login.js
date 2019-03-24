@@ -8,7 +8,8 @@ router.get('/', (req, res, next) =>{
 });
 
 router.post('/', (req, res, next) => {
-    //TODO: HACER MIDDLEWARE PARA CHEQUE DE DATOS AL LOGUEAR
+    console.log('//TODO: HACER MIDDLEWARE PARA CHEQUER DE DATOS AL LOGUEAR');
+    
     res.redirect('/');
 });
 
