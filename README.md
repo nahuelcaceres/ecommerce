@@ -1,6 +1,6 @@
 # ecommerce 
 
-Proyecto desde cero en el cual voy a ir agregando toda lo cursado.
+Proyecto desde cero en el cual voy a ir agregando todo lo cursado.
 Finalmente la idea sera un carrito de compras bien basico.
 
 ### Insertar productos por defecto
