@@ -11,20 +11,10 @@ Código
 Al hacer clic en el producto la aplicación nos debe redirigir a la página de detalle del
 mismo en la cual visualizaremos la misma información de la home
 
-<!-- <% productos1 %> -->
-        
-   <!--  <% productos.forEach(function(producto)) {%>
+Trabajo práctico Unidad N° 4 (optativo)
+Consigna:
 
-        <br>
-        <div id="producto">
-            <p>Nombre: <%= producto.nombre %></p>        
-            <img src="imagen.jpg" alt="imagen del objecto"> 
-            <p>Descripcion:</p>
-            <p>Precio:</p>
-            <p>Precio con descuento:</p>
-            <p>Codigo:</p>
-        </div>
+Siguiendo el desarrollo de la unidad anterior, leer los datos renderizados en la home desde
+un json almacenado en una base de datos mongo db.
 
-    <% }); %> -->
-
-    <%# <%= producto.toString() %> %>
+El json almacenado podrá no ser guardado a través de un ABM sino directamente en la misma.

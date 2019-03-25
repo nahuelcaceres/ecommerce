@@ -3,6 +3,18 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost:27017/ecommerce', (err, res) => {
+
+  //Si tengo un error, lo lanzo y termina el programa
+  if (err) {
+    throw err;
+  }
+
+  console.log('Base de datos ecommerce: Online');
+
+});
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');

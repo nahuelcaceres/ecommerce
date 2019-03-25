@@ -1,14 +1,19 @@
 const express = require('express');
 const router = express.Router();
-const producto = require('../models/producto');
+const Producto = require('../models/producto');
 
 router.get('/', (req, res, next) => {
 
-    let codigo = req.query.codigo;
+    let codigoPedido = req.query.codigo;
 
-    const productoSeleccionado = producto.obtenerProducto(codigo);
+    //const productoSeleccionado = producto.obtenerProducto(codigo);
 
-    res.render("producto.ejs", {producto: productoSeleccionado});
+    Producto.Producto.findOne({codigo: codigoPedido}, (err, productoDB) => {
+        res.render("producto.ejs", {producto: productoDB});
+    });
+
+    // select only the adventures name
+    //Adventure.findOne({ type: 'iphone' }, 'name', function (err, adventure) {});
 
 });
 
