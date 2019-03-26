@@ -10,7 +10,10 @@ router.get('/', (req, res, next) =>{
     Producto.Producto.find({})
         .exec()
         .then( productosDB => {
-            res.render("productos.ejs", {productos: productosDB});
+            res.render("productos.ejs", {
+                productos: productosDB,
+                agregarBotonInsert: (productosDB.length == 0)
+            });
         })
         .catch(err => console.log('Error:', err))      
 

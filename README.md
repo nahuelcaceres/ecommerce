@@ -5,12 +5,8 @@ Finalmente la idea sera un carrito de compras bien basico.
 
 ### Insertar productos por defecto
 
-    Para insertar unos productos de prueba, podemos hacer un GET a la api con la ruta
-    insertarProductos
+    Existira un boton en el home para insertar 4 productos por defecto.
 
-```
-    http://localhost:3000/insertarProductos
-```
 
 ## Built With
 
