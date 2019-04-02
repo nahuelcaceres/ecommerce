@@ -35,10 +35,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-//app.use('/', indexRouter);
-//app.use('/productos', productosRouter);
 
-app.use('/', productosRouter);
+app.use('/', indexRouter);
+app.use('/productos', productosRouter);
 app.use('/users', usersRouter);
 app.use('/producto', productoRouter);
 app.use('/login', loginRouter);
@@ -59,5 +58,11 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+function loguear(req, res, next){
+  console.log('pase por el middleware');
+  next = true;
+
+}
 
 module.exports = app;

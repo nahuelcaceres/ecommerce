@@ -6,6 +6,20 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+
+    <p>Antes de comenzar</p>
+
+    <div class="linkss">
+      
+      <% if (logueado) {%>
+        <a class="linkProducto" href="/logout"> Logout <a>
+    
+      <% } else {  %>
+        <a class="linkProducto" href="/registro">Registro<a>
+        <a class="linkProducto" href="/login"> Login <a>
+      <% } %>
+
+    </div> 
+    
   </body>
 </html>

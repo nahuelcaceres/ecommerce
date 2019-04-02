@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const Producto = require('../models/producto');
+const { vericarUsuarioLogueado } = require('../middlewares/autenticacion');
 
-router.get('/', (req, res, next) => {
+router.get('/', vericarUsuarioLogueado, (req, res, next) => {
 
     let codigoPedido = req.query.codigo;
 

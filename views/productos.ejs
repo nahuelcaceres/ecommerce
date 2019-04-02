@@ -6,38 +6,50 @@
 <body>
     <div class="navBar">
          <div class="links">
-            <% if (agregarBotonInsert) { %>
-                <a class="linkProducto" href="/insertarProductos">InsertarProductos<a>
-            <% } %>
-            <a class="linkProducto" href="/registro">Registro<a>
-            <a class="linkProducto" href="/login">  Login <a>
+            <!-- <a class="linkProducto" href="/registro">Registro<a> -->
+            <a class="linkProducto" href="/logout"> Logout <a>
          </div>     
     </div> 
     
     <h1>Listado de productos</h1>
     <br/>
+    
+    <% if (agregarBotonInsert) { %>
+        <form action="/productos/insertarProductos" method="POST">
+            <div class="container">
+                
+                <button type="submit">Insertar Productos</button>
 
-    <% for(var i = 0; i < productos.length; i++) { %>
-   
-        <div class="producto">
-        <a href="/producto?codigo=<%= productos[i].codigo %>" class="linkProducto">
-        
-            <div class="imagen">
-            <img class="imagenProducto" src= <%= productos[i].imgSource %>  alt="" /> 
             </div>
+        </form>
+    
+    <% } else { %>
+    
+        <% for(var i = 0; i < productos.length; i++) { %>
+    
+            <div class="producto">
+            <a href="/producto?codigo=<%= productos[i].codigo %>" class="linkProducto">
+            
+                <div class="imagen">
+                <img class="imagenProducto" src= <%= productos[i].imgSource %>  alt="" /> 
+                </div>
 
-            <div class="sumario">
-            <h3>Nombre: <%= productos[i].nombre %></h3>        
-            <p>Descripcion: <%= productos[i].descripcion %></p>
-            <span class="precio">Precio: <%= productos[i].precio %></span>
-            <span class="precioDescuento">Precio con descuento: <%= productos[i].precioDescuento %></span>
-            <span class="codigo">Codigo: <%= productos[i].codigo %></span>  
+                <div class="sumario">
+                <h3>Nombre: <%= productos[i].nombre %></h3>        
+                <p>Descripcion: <%= productos[i].descripcion %></p>
+                <span class="precio">Precio: <%= productos[i].precio %></span>
+                <span class="precioDescuento">Precio con descuento: <%= productos[i].precioDescuento %></span>
+                <span class="codigo">Codigo: <%= productos[i].codigo %></span>  
+                </div>
+            </a>
             </div>
-        </a>
-        </div>
-        <hr/>
+            <hr/>
+
+        <% } %>
 
     <% } %>
+    
+    
 
 </body>
 </html>

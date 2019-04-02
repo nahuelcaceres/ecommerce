@@ -18,3 +18,23 @@ Siguiendo el desarrollo de la unidad anterior, leer los datos renderizados en la
 un json almacenado en una base de datos mongo db.
 
 El json almacenado podrá no ser guardado a través de un ABM sino directamente en la misma.
+
+Consigna:
+
+Utilizando express + MySql y/o Mongo DB Desarrollar un ecommerce (sin carrito de compra) que posea las siguientes paginas:
+
+Home
+Listado de productos destacados, mostrar al menos 4 productos
+Cada producto debe contener el link a su pagina de detalle
+Pagina de detalle de producto
+Se debe visualizar los siguientes datos del producto:
+Nombre
+Precio
+Código
+Descripción
+Categoría
+
+Registro 
+Login
+
+Debe tener funcionalidad de registro y login, no es necesario contar con la funcionalidad para comprar un producto.

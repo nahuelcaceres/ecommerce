@@ -18,6 +18,10 @@ body {
    
  }
  
+ .categoria{
+  margin-left:25px
+   
+ }
  .imagen{
    display:inline-block;
    width: 20%;
